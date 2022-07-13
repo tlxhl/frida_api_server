@@ -55,7 +55,7 @@ class HookDevice(object):
 
             pipe.stdin.write('su\n'.encode('utf-8'))
             pipe.stdin.write('cd /data/local/tmp/\n'.encode('utf-8'))
-            pipe.stdin.write('./fridas &\n'.encode('utf-8'))
+            pipe.stdin.write('./frida-server &\n'.encode('utf-8'))
             pipe.stdin.write('exit\n'.encode('utf-8'))
 
             pipe.communicate(timeout=1)

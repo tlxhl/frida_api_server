@@ -13,6 +13,24 @@
 
 ### 详情请阅读代码
     ## 慢 懂得都懂
+
+    1. 安装frida 这里已夜神为例 
+    夜神Frida
+    先adb连上夜神，看看它是嘛系统
+    fenfeiMac:Desktop ff$ adb connect 127.0.0.1:62001
+    already connected to 127.0.0.1:62001
+    fenfeiMac:Desktop ff$ adb shell getprop ro.product.cpu.abi
+    x86
+    把对应的 fridaServer拷进去
+    adb push frida-server-14.2.18-android-x86 /data/local/tmp/frida-server
+    跑起来
+    adb shell
+    su
+    cd /data/local/tmp
+    chmod 755 frida-server
+    ./frida-server
+    
+    2. 算法
     sig getSign
     sig3 getNSSign3
     tokensig sha256 sig+salt
