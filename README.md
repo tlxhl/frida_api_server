@@ -12,9 +12,9 @@
 在 `frida_hook` 文件夹下编写，例如某手，已有样例
 
 ### 详情请阅读代码
-    ## 慢 懂得都懂
-
-    1. 安装frida 这里已夜神为例 
+    1. 安装的frida版本一定要对应
+    2. 安装frida 这里已夜神为例 
+    http://91fans.com.cn/post/emuxposedfrida/#gsc.tab=0
     夜神Frida
     先adb连上夜神，看看它是嘛系统
     fenfeiMac:Desktop ff$ adb connect 127.0.0.1:62001
@@ -30,7 +30,7 @@
     chmod 755 frida-server
     ./frida-server
     
-    2. 算法
+    3. 算法
     sig getSign
     sig3 getNSSign3
     tokensig sha256 sig+salt
