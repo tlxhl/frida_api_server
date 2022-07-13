@@ -22,7 +22,7 @@
     fenfeiMac:Desktop ff$ adb shell getprop ro.product.cpu.abi
     x86
     把对应的 fridaServer拷进去
-    adb push frida-server-14.2.18-android-x86 /data/local/tmp/frida-server
+    adb push frida-server-15.1.24-android-x86 /data/local/tmp/frida-server
     跑起来
     adb shell
     su
