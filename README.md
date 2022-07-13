@@ -1,4 +1,4 @@
-# frida_api
+# frida_api_server
 - 使用 flask_restful 写的 frida rpc 服务
 - 可以连接多台手机，可以同时 hook 多个 app
 - 每个 app 只会 attach 一次，这样可以减少内存消耗，以免 app 挂掉
@@ -12,3 +12,7 @@
 在 `frida_hook` 文件夹下编写，例如某手，已有样例
 
 ### 详情请阅读代码
+    ## 慢 懂得都懂
+    sig getSign
+    sig3 getNSSign3
+    tokensig sha256 sig+salt
